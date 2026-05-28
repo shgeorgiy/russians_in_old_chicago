@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2315fa09637134d9c5c2a30a8f627d9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2315fa09637134d9c5c2a30a8f627d9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2315fa09637134d9c5c2a30a8f627d9f = L.map(
+                "map_2315fa09637134d9c5c2a30a8f627d9f",
+                {
+                    center: [41.36152598571429, -87.51505289047618],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+
+            
+
+        
+    
+            var tile_layer_293e2f60ead84c442e6236ba23e76061 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_293e2f60ead84c442e6236ba23e76061.addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+            var circle_marker_9fe98e4de6ee2bf741d95a318ecb7873 = L.circleMarker(
+                [41.8962887, -87.6707648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_109a33f2fc17ad2daabf834e910e222b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b6ea60c159e9a71a66da414bce80a8b6 = $(`<div id="html_b6ea60c159e9a71a66da414bce80a8b6" style="width: 100.0%; height: 100.0%;">     <b>книги</b><br><br>     Продажа книг<br><br>     <i>1722 W Chicago ave</i>     </div>`)[0];
+                popup_109a33f2fc17ad2daabf834e910e222b.setContent(html_b6ea60c159e9a71a66da414bce80a8b6);
+            
+        
+
+        circle_marker_9fe98e4de6ee2bf741d95a318ecb7873.bindPopup(popup_109a33f2fc17ad2daabf834e910e222b)
+        ;
+
+        
+    
+    
+            var circle_marker_9b3fbb5064235a9c7797b2b6183d1860 = L.circleMarker(
+                [41.844355, -87.7230455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_396d8fcd22dfab4e78645b29308d250f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_53c37cbe6c2172b4c9bac734d7c587c8 = $(`<div id="html_53c37cbe6c2172b4c9bac734d7c587c8" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     гинеколог/педиатр<br><br>     <i>3924 w 26th st</i>     </div>`)[0];
+                popup_396d8fcd22dfab4e78645b29308d250f.setContent(html_53c37cbe6c2172b4c9bac734d7c587c8);
+            
+        
+
+        circle_marker_9b3fbb5064235a9c7797b2b6183d1860.bindPopup(popup_396d8fcd22dfab4e78645b29308d250f)
+        ;
+
+        
+    
+    
+            var circle_marker_d53158dcc506aedcce7adc3f24260e4a = L.circleMarker(
+                [41.5412317, -87.6353661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_aa713959cc140cf405141f82ea268bc1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_603f923c99a36cbffb22df5d4b2ebf03 = $(`<div id="html_603f923c99a36cbffb22df5d4b2ebf03" style="width: 100.0%; height: 100.0%;">     <b>косметология</b><br><br>     средство для волос<br><br>     <i>1339 So Halsted St</i>     </div>`)[0];
+                popup_aa713959cc140cf405141f82ea268bc1.setContent(html_603f923c99a36cbffb22df5d4b2ebf03);
+            
+        
+
+        circle_marker_d53158dcc506aedcce7adc3f24260e4a.bindPopup(popup_aa713959cc140cf405141f82ea268bc1)
+        ;
+
+        
+    
+    
+            var circle_marker_b51c5f097d3bec391233b36ea0f9b429 = L.circleMarker(
+                [41.8516024, -87.7212059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_048e0c9abf4ca8ed9d98c147dfd78353 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cfc1e0e2207908e2714614c70c906dde = $(`<div id="html_cfc1e0e2207908e2714614c70c906dde" style="width: 100.0%; height: 100.0%;">     <b>Аптека</b><br><br>     Русская аптека<br><br>     <i>2659 W 22nd st</i>     </div>`)[0];
+                popup_048e0c9abf4ca8ed9d98c147dfd78353.setContent(html_cfc1e0e2207908e2714614c70c906dde);
+            
+        
+
+        circle_marker_b51c5f097d3bec391233b36ea0f9b429.bindPopup(popup_048e0c9abf4ca8ed9d98c147dfd78353)
+        ;
+
+        
+    
+    
+            var circle_marker_421876ba9d44f67bea05785021739a5f = L.circleMarker(
+                [41.9025185, -87.6656254],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_7424f89a18560c771c2edc71a5584f0b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d1df6213c19a6889937d3c078ce760df = $(`<div id="html_d1df6213c19a6889937d3c078ce760df" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Окулист<br><br>     <i>1152 Milwaukee Ave</i>     </div>`)[0];
+                popup_7424f89a18560c771c2edc71a5584f0b.setContent(html_d1df6213c19a6889937d3c078ce760df);
+            
+        
+
+        circle_marker_421876ba9d44f67bea05785021739a5f.bindPopup(popup_7424f89a18560c771c2edc71a5584f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_265528972338fe0e1ebcabb36cb97978 = L.circleMarker(
+                [41.5047793, -87.5602377],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_942b7d24753051480c802e5f97feee61 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_01d66fbe98a5d1acf756d8df6e1d6869 = $(`<div id="html_01d66fbe98a5d1acf756d8df6e1d6869" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Врач, хирург и акушер<br><br>     <i>1237 W Grand st</i>     </div>`)[0];
+                popup_942b7d24753051480c802e5f97feee61.setContent(html_01d66fbe98a5d1acf756d8df6e1d6869);
+            
+        
+
+        circle_marker_265528972338fe0e1ebcabb36cb97978.bindPopup(popup_942b7d24753051480c802e5f97feee61)
+        ;
+
+        
+    
+    
+            var circle_marker_c831243131d17c0494cf377c488a166a = L.circleMarker(
+                [41.9196172, -87.7709445],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_6cad5d46be6f74a0f5a0fe43ad9baf87 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_822cea7c1d8e34fa17d5c240c0596c60 = $(`<div id="html_822cea7c1d8e34fa17d5c240c0596c60" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Врач, хирург и акушер<br><br>     <i>5803 W Grand Ave</i>     </div>`)[0];
+                popup_6cad5d46be6f74a0f5a0fe43ad9baf87.setContent(html_822cea7c1d8e34fa17d5c240c0596c60);
+            
+        
+
+        circle_marker_c831243131d17c0494cf377c488a166a.bindPopup(popup_6cad5d46be6f74a0f5a0fe43ad9baf87)
+        ;
+
+        
+    
+    
+            var circle_marker_0fd82f85dea9246c564371106251c88f = L.circleMarker(
+                [41.8169895, -87.6996915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_65458fed4ccd799ce90080adfab00a26 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e6af327fc210a871ae459a6bdcd2dc86 = $(`<div id="html_e6af327fc210a871ae459a6bdcd2dc86" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Зубной<br><br>     <i>4204 Archer Ave</i>     </div>`)[0];
+                popup_65458fed4ccd799ce90080adfab00a26.setContent(html_e6af327fc210a871ae459a6bdcd2dc86);
+            
+        
+
+        circle_marker_0fd82f85dea9246c564371106251c88f.bindPopup(popup_65458fed4ccd799ce90080adfab00a26)
+        ;
+
+        
+    
+    
+            var circle_marker_437b573684600626e99f662dfb8e8116 = L.circleMarker(
+                [41.9033594, -87.6716882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_9606ddb5caa4713e99b7716a8245a57e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f0afd0d5ea697323b85bae4309328efc = $(`<div id="html_f0afd0d5ea697323b85bae4309328efc" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Зубной<br><br>     <i>1756 W Division St</i>     </div>`)[0];
+                popup_9606ddb5caa4713e99b7716a8245a57e.setContent(html_f0afd0d5ea697323b85bae4309328efc);
+            
+        
+
+        circle_marker_437b573684600626e99f662dfb8e8116.bindPopup(popup_9606ddb5caa4713e99b7716a8245a57e)
+        ;
+
+        
+    
+    
+            var circle_marker_4adc25662992f8f184a100f443638d0a = L.circleMarker(
+                [42.0114945, -87.6701554],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_8c15a07943f81df253637270841784be = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4f5e8212d87b8083f4f2a4b98546ea7d = $(`<div id="html_4f5e8212d87b8083f4f2a4b98546ea7d" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>631 S Ashland Blvd</i>     </div>`)[0];
+                popup_8c15a07943f81df253637270841784be.setContent(html_4f5e8212d87b8083f4f2a4b98546ea7d);
+            
+        
+
+        circle_marker_4adc25662992f8f184a100f443638d0a.bindPopup(popup_8c15a07943f81df253637270841784be)
+        ;
+
+        
+    
+    
+            var circle_marker_ef0faa7a21e0294d80310f0c60e28959 = L.circleMarker(
+                [41.8818386, -87.6257462],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_0131faf3e2ae6a903a3d76ab0a45045b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b05a08646355b025b0c02db8e7f6dced = $(`<div id="html_b05a08646355b025b0c02db8e7f6dced" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>5 S Wabash Ave</i>     </div>`)[0];
+                popup_0131faf3e2ae6a903a3d76ab0a45045b.setContent(html_b05a08646355b025b0c02db8e7f6dced);
+            
+        
+
+        circle_marker_ef0faa7a21e0294d80310f0c60e28959.bindPopup(popup_0131faf3e2ae6a903a3d76ab0a45045b)
+        ;
+
+        
+    
+    
+            var circle_marker_bc2fa3ffcde64d95ada2c30dc355687e = L.circleMarker(
+                [41.8580812, -87.6605828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_ecd0d4d16495c15af7dc7a05f7cefc79 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8de947cdd8da9632f154ee94d6cd6e5b = $(`<div id="html_8de947cdd8da9632f154ee94d6cd6e5b" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     -<br><br>     <i>1663 Blue Island Ave</i>     </div>`)[0];
+                popup_ecd0d4d16495c15af7dc7a05f7cefc79.setContent(html_8de947cdd8da9632f154ee94d6cd6e5b);
+            
+        
+
+        circle_marker_bc2fa3ffcde64d95ada2c30dc355687e.bindPopup(popup_ecd0d4d16495c15af7dc7a05f7cefc79)
+        ;
+
+        
+    
+    
+            var circle_marker_e447623ea746266a620266f799cf9085 = L.circleMarker(
+                [41.8957918, -87.6706139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_79a2175e69f12db44de7afd72d8d5e97 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b5822b9e8ba0f6f8350da6d5dab85e8d = $(`<div id="html_b5822b9e8ba0f6f8350da6d5dab85e8d" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     окончивший Иллинойский университет<br><br>     <i>1719 W Chicago Ave</i>     </div>`)[0];
+                popup_79a2175e69f12db44de7afd72d8d5e97.setContent(html_b5822b9e8ba0f6f8350da6d5dab85e8d);
+            
+        
+
+        circle_marker_e447623ea746266a620266f799cf9085.bindPopup(popup_79a2175e69f12db44de7afd72d8d5e97)
+        ;
+
+        
+    
+    
+            var circle_marker_15192afa53197d95908cfc42752f1b34 = L.circleMarker(
+                [41.9031728, -87.6672648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_0ea850e2f6a96d5efd48efed6adb10e8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f89b1f82c50b77e2069ae852d0150278 = $(`<div id="html_f89b1f82c50b77e2069ae852d0150278" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     <br><br>     <i>1555 W Division St</i>     </div>`)[0];
+                popup_0ea850e2f6a96d5efd48efed6adb10e8.setContent(html_f89b1f82c50b77e2069ae852d0150278);
+            
+        
+
+        circle_marker_15192afa53197d95908cfc42752f1b34.bindPopup(popup_0ea850e2f6a96d5efd48efed6adb10e8)
+        ;
+
+        
+    
+    
+            var circle_marker_1130e248f93535ea7664ee376b9b2eba = L.circleMarker(
+                [41.8579259, -87.6523739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_6286d3fe89b47959dfedfa672cd51f8a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_58cb76214519fd0bbda5de434f7ac897 = $(`<div id="html_58cb76214519fd0bbda5de434f7ac897" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     хирург и акушер<br><br>     <i>1025 W 18th st</i>     </div>`)[0];
+                popup_6286d3fe89b47959dfedfa672cd51f8a.setContent(html_58cb76214519fd0bbda5de434f7ac897);
+            
+        
+
+        circle_marker_1130e248f93535ea7664ee376b9b2eba.bindPopup(popup_6286d3fe89b47959dfedfa672cd51f8a)
+        ;
+
+        
+    
+    
+            var circle_marker_4ac6829c0564550080d9430c537d359b = L.circleMarker(
+                [41.8960862, -87.6713746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_9568ae0777eb9cdb690144f0a38e90d3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_626c597fc75ec6867b15e1f4f3e8445d = $(`<div id="html_626c597fc75ec6867b15e1f4f3e8445d" style="width: 100.0%; height: 100.0%;">     <b>аренда жилья</b><br><br>     комната в наем<br><br>     <i>1752 W Chicago Ave</i>     </div>`)[0];
+                popup_9568ae0777eb9cdb690144f0a38e90d3.setContent(html_626c597fc75ec6867b15e1f4f3e8445d);
+            
+        
+
+        circle_marker_4ac6829c0564550080d9430c537d359b.bindPopup(popup_9568ae0777eb9cdb690144f0a38e90d3)
+        ;
+
+        
+    
+    
+            var circle_marker_40ea584e3ed2e5979bbcf58c5e043e0c = L.circleMarker(
+                [41.9093918, -87.6969272],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_38d18bd4b0434a03fbfe9b132a9bd55a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4c15ee6d9629c8dc4f9d680324a4b4eb = $(`<div id="html_4c15ee6d9629c8dc4f9d680324a4b4eb" style="width: 100.0%; height: 100.0%;">     <b>аренда жилья</b><br><br>     2 квартиры в наем<br><br>     <i>1557 California Ave</i>     </div>`)[0];
+                popup_38d18bd4b0434a03fbfe9b132a9bd55a.setContent(html_4c15ee6d9629c8dc4f9d680324a4b4eb);
+            
+        
+
+        circle_marker_40ea584e3ed2e5979bbcf58c5e043e0c.bindPopup(popup_38d18bd4b0434a03fbfe9b132a9bd55a)
+        ;
+
+        
+    
+    
+            var circle_marker_045487e11a5e73d948afa929919bf569 = L.circleMarker(
+                [41.9048166, -87.6836809],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_0feb82dd2b78d921afee0d37e910763f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c79fb406b3b7742c91fb58d722d11879 = $(`<div id="html_c79fb406b3b7742c91fb58d722d11879" style="width: 100.0%; height: 100.0%;">     <b>рабочий</b><br><br>     русский пломбер<br><br>     <i>2243 Potomac Ave</i>     </div>`)[0];
+                popup_0feb82dd2b78d921afee0d37e910763f.setContent(html_c79fb406b3b7742c91fb58d722d11879);
+            
+        
+
+        circle_marker_045487e11a5e73d948afa929919bf569.bindPopup(popup_0feb82dd2b78d921afee0d37e910763f)
+        ;
+
+        
+    
+    
+            var circle_marker_4640d503749d1b48fa9409b3e0fe9490 = L.circleMarker(
+                [41.8817463, -87.6434036],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_86cfacdbcb0909cc5b94e75a71800437 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a7308f82971199ff44c175fcdb0fa928 = $(`<div id="html_a7308f82971199ff44c175fcdb0fa928" style="width: 100.0%; height: 100.0%;">     <b>школа</b><br><br>     парикмахерское дело<br><br>     <i>651 W Madison St</i>     </div>`)[0];
+                popup_86cfacdbcb0909cc5b94e75a71800437.setContent(html_a7308f82971199ff44c175fcdb0fa928);
+            
+        
+
+        circle_marker_4640d503749d1b48fa9409b3e0fe9490.bindPopup(popup_86cfacdbcb0909cc5b94e75a71800437)
+        ;
+
+        
+    
+    
+            var circle_marker_4e246d3e107474de1818730d3cfde360 = L.circleMarker(
+                [41.8768962, -87.625798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a9ad757946d23747422746c57a30990d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_72e52981cf7f35dd1061c2efc30defd7 = $(`<div id="html_72e52981cf7f35dd1061c2efc30defd7" style="width: 100.0%; height: 100.0%;">     <b>школа</b><br><br>     английский язык<br><br>     <i>21 E Van Buren St</i>     </div>`)[0];
+                popup_a9ad757946d23747422746c57a30990d.setContent(html_72e52981cf7f35dd1061c2efc30defd7);
+            
+        
+
+        circle_marker_4e246d3e107474de1818730d3cfde360.bindPopup(popup_a9ad757946d23747422746c57a30990d)
+        ;
+
+        
+    
+    
+            var circle_marker_588f9eb04bceae2ee1735f862f6e5130 = L.circleMarker(
+                [41.8336577, -87.6458865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_b407749900077b7d9e1a4e84af14d95f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d032b2ab18ff2874c77c73829cb694e0 = $(`<div id="html_d032b2ab18ff2874c77c73829cb694e0" style="width: 100.0%; height: 100.0%;">     <b>адвокат</b><br><br>     <br><br>     <i>3323 S Halsted St</i>     </div>`)[0];
+                popup_b407749900077b7d9e1a4e84af14d95f.setContent(html_d032b2ab18ff2874c77c73829cb694e0);
+            
+        
+
+        circle_marker_588f9eb04bceae2ee1735f862f6e5130.bindPopup(popup_b407749900077b7d9e1a4e84af14d95f)
+        ;
+
+        
+    
+    
+            var circle_marker_1f75e17955227e89ddddf2a009b6314a = L.circleMarker(
+                [41.8959371, -87.6845906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_bec3974e757080b3ffc87aee770fab15 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_498c1be2e65037039ad8d9ee9cf4d903 = $(`<div id="html_498c1be2e65037039ad8d9ee9cf4d903" style="width: 100.0%; height: 100.0%;">     <b>адвокат</b><br><br>     <br><br>     <i>2300 W  Chicago Ave</i>     </div>`)[0];
+                popup_bec3974e757080b3ffc87aee770fab15.setContent(html_498c1be2e65037039ad8d9ee9cf4d903);
+            
+        
+
+        circle_marker_1f75e17955227e89ddddf2a009b6314a.bindPopup(popup_bec3974e757080b3ffc87aee770fab15)
+        ;
+
+        
+    
+    
+            var circle_marker_dd6d7ea94f28601caf8bb7222d680291 = L.circleMarker(
+                [27.721699, -81.5461308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_8570547ba4f88069a6fb39721ec48469 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_12b8d9e1b24703d2eb1675a46ce3fc46 = $(`<div id="html_12b8d9e1b24703d2eb1675a46ce3fc46" style="width: 100.0%; height: 100.0%;">     <b>баня</b><br><br>     Русские и турецкие ванны<br><br>     <i>8514-16 Rosevelt Ave</i>     </div>`)[0];
+                popup_8570547ba4f88069a6fb39721ec48469.setContent(html_12b8d9e1b24703d2eb1675a46ce3fc46);
+            
+        
+
+        circle_marker_dd6d7ea94f28601caf8bb7222d680291.bindPopup(popup_8570547ba4f88069a6fb39721ec48469)
+        ;
+
+        
+    
+    
+            var circle_marker_bc4037854fb9e19aa25bf321859c6d1d = L.circleMarker(
+                [41.8596321, -87.6687398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_47fe7ee57db90d93e500f6358a28e5e7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_755419358bad0f5d18e32fb2910524a7 = $(`<div id="html_755419358bad0f5d18e32fb2910524a7" style="width: 100.0%; height: 100.0%;">     <b>баня</b><br><br>     бани, ванны и души<br><br>     <i>1115-17 S Paulina St</i>     </div>`)[0];
+                popup_47fe7ee57db90d93e500f6358a28e5e7.setContent(html_755419358bad0f5d18e32fb2910524a7);
+            
+        
+
+        circle_marker_bc4037854fb9e19aa25bf321859c6d1d.bindPopup(popup_47fe7ee57db90d93e500f6358a28e5e7)
+        ;
+
+        
+    
+    
+            var circle_marker_ee3a66a1fda6e7d0fd29297d2428060a = L.circleMarker(
+                [41.8955337, -87.6816865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_f97fecdb359b85faf07d26f1fe38e2cc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_228e2bf47a1db21a6454bf4837cecf03 = $(`<div id="html_228e2bf47a1db21a6454bf4837cecf03" style="width: 100.0%; height: 100.0%;">     <b>погребщик</b><br><br>     <br><br>     <i>2157 W Chicago Ave</i>     </div>`)[0];
+                popup_f97fecdb359b85faf07d26f1fe38e2cc.setContent(html_228e2bf47a1db21a6454bf4837cecf03);
+            
+        
+
+        circle_marker_ee3a66a1fda6e7d0fd29297d2428060a.bindPopup(popup_f97fecdb359b85faf07d26f1fe38e2cc)
+        ;
+
+        
+    
+    
+            var circle_marker_4556d6b2a987d37589678ad9e83a8b98 = L.circleMarker(
+                [41.897447, -87.6671162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_6f58c509f6d4f41a2c960e09b43e5ebd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e2309c80f8939845610283cc5483e8f6 = $(`<div id="html_e2309c80f8939845610283cc5483e8f6" style="width: 100.0%; height: 100.0%;">     <b>Русское независимое общество</b><br><br>     <br><br>     <i>845 N Ashland Ave</i>     </div>`)[0];
+                popup_6f58c509f6d4f41a2c960e09b43e5ebd.setContent(html_e2309c80f8939845610283cc5483e8f6);
+            
+        
+
+        circle_marker_4556d6b2a987d37589678ad9e83a8b98.bindPopup(popup_6f58c509f6d4f41a2c960e09b43e5ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_c3d141a91fd2a74c9ae877dc6e71f2fe = L.circleMarker(
+                [41.8983705, -87.6718783],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a291e1cbece71fee8efde37b69f3801b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ef0f08010621c51ef348f8b3022d2485 = $(`<div id="html_ef0f08010621c51ef348f8b3022d2485" style="width: 100.0%; height: 100.0%;">     <b>церковь</b><br><br>     Священник - Иоанн Желтонога<br><br>     <i>917 N Wood St</i>     </div>`)[0];
+                popup_a291e1cbece71fee8efde37b69f3801b.setContent(html_ef0f08010621c51ef348f8b3022d2485);
+            
+        
+
+        circle_marker_c3d141a91fd2a74c9ae877dc6e71f2fe.bindPopup(popup_a291e1cbece71fee8efde37b69f3801b)
+        ;
+
+        
+    
+    
+            var circle_marker_1510bd1843e765a5aabbe56566436494 = L.circleMarker(
+                [41.8982851, -87.7801219],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_55e41bfa5fd18af0b3340789c3de9d2a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_91318aea5e3b598e40d90daf6673cee5 = $(`<div id="html_91318aea5e3b598e40d90daf6673cee5" style="width: 100.0%; height: 100.0%;">     <b>стройка</b><br><br>     Строительная контора<br><br>     <i>2617 Augusta St</i>     </div>`)[0];
+                popup_55e41bfa5fd18af0b3340789c3de9d2a.setContent(html_91318aea5e3b598e40d90daf6673cee5);
+            
+        
+
+        circle_marker_1510bd1843e765a5aabbe56566436494.bindPopup(popup_55e41bfa5fd18af0b3340789c3de9d2a)
+        ;
+
+        
+    
+    
+            var circle_marker_317bf696dd9a3ed8e9fa4123ad0e80bd = L.circleMarker(
+                [41.8635388, -87.6526387],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_ff7795a8efc125f3facdd713bb7bb0c0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_19ee6c6624b883f248eb1a244479170c = $(`<div id="html_19ee6c6624b883f248eb1a244479170c" style="width: 100.0%; height: 100.0%;">     <b>коммерческая недвижимость</b><br><br>     продается бутчерня и гроссерня<br><br>     <i>1078 W 14th st</i>     </div>`)[0];
+                popup_ff7795a8efc125f3facdd713bb7bb0c0.setContent(html_19ee6c6624b883f248eb1a244479170c);
+            
+        
+
+        circle_marker_317bf696dd9a3ed8e9fa4123ad0e80bd.bindPopup(popup_ff7795a8efc125f3facdd713bb7bb0c0)
+        ;
+
+        
+    
+    
+            var circle_marker_75b3d5c64026e85cabac377ad785436c = L.circleMarker(
+                [41.8982851, -87.7801219],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_d05e62c2376f852978ea61f4d57f25d1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1862f10a3722e36cc1956d5b75713179 = $(`<div id="html_1862f10a3722e36cc1956d5b75713179" style="width: 100.0%; height: 100.0%;">     <b>стройка</b><br><br>     Строительная контора<br><br>     <i>2617 Augusta St</i>     </div>`)[0];
+                popup_d05e62c2376f852978ea61f4d57f25d1.setContent(html_1862f10a3722e36cc1956d5b75713179);
+            
+        
+
+        circle_marker_75b3d5c64026e85cabac377ad785436c.bindPopup(popup_d05e62c2376f852978ea61f4d57f25d1)
+        ;
+
+        
+    
+    
+            var circle_marker_d242307374eff834c03142fb4a051596 = L.circleMarker(
+                [41.8817463, -87.6434036],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_77c92de23f8cc6d8fa69288b9a6d1b0e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8c965dca9b555c76d99bd7986353e7de = $(`<div id="html_8c965dca9b555c76d99bd7986353e7de" style="width: 100.0%; height: 100.0%;">     <b>школа</b><br><br>     парикмахерское дело<br><br>     <i>651 W Madison St</i>     </div>`)[0];
+                popup_77c92de23f8cc6d8fa69288b9a6d1b0e.setContent(html_8c965dca9b555c76d99bd7986353e7de);
+            
+        
+
+        circle_marker_d242307374eff834c03142fb4a051596.bindPopup(popup_77c92de23f8cc6d8fa69288b9a6d1b0e)
+        ;
+
+        
+    
+    
+            var circle_marker_76d3ca6e617949c879f15bfec9df3d6f = L.circleMarker(
+                [41.8768962, -87.625798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_8291d19f78778419bbf3551c5dac5b09 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9972f1f3c049a7e3f831aa3f65c25c0f = $(`<div id="html_9972f1f3c049a7e3f831aa3f65c25c0f" style="width: 100.0%; height: 100.0%;">     <b>школа</b><br><br>     английский язык<br><br>     <i>21 E Van Buren St</i>     </div>`)[0];
+                popup_8291d19f78778419bbf3551c5dac5b09.setContent(html_9972f1f3c049a7e3f831aa3f65c25c0f);
+            
+        
+
+        circle_marker_76d3ca6e617949c879f15bfec9df3d6f.bindPopup(popup_8291d19f78778419bbf3551c5dac5b09)
+        ;
+
+        
+    
+    
+            var circle_marker_60afb91f457b1814f4706202aaba330b = L.circleMarker(
+                [41.8336577, -87.6458865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_6fc004c191681a30b538b1918719606c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b7484145196ca3a9a7be6e2e009e018a = $(`<div id="html_b7484145196ca3a9a7be6e2e009e018a" style="width: 100.0%; height: 100.0%;">     <b>адвокат</b><br><br>     <br><br>     <i>3323 S Halsted St</i>     </div>`)[0];
+                popup_6fc004c191681a30b538b1918719606c.setContent(html_b7484145196ca3a9a7be6e2e009e018a);
+            
+        
+
+        circle_marker_60afb91f457b1814f4706202aaba330b.bindPopup(popup_6fc004c191681a30b538b1918719606c)
+        ;
+
+        
+    
+    
+            var circle_marker_d67a59c54127aaa2fc6b414e54f27642 = L.circleMarker(
+                [41.8959371, -87.6845906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_abdff358d47588c4b7132abc094ace44 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_341496f694758954cf4aeb145f873345 = $(`<div id="html_341496f694758954cf4aeb145f873345" style="width: 100.0%; height: 100.0%;">     <b>адвокат</b><br><br>     <br><br>     <i>2300 W  Chicago Ave</i>     </div>`)[0];
+                popup_abdff358d47588c4b7132abc094ace44.setContent(html_341496f694758954cf4aeb145f873345);
+            
+        
+
+        circle_marker_d67a59c54127aaa2fc6b414e54f27642.bindPopup(popup_abdff358d47588c4b7132abc094ace44)
+        ;
+
+        
+    
+    
+            var circle_marker_5c9e440cb4824bd87aec143379590691 = L.circleMarker(
+                [27.721699, -81.5461308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_11ae32e50c7233bdbb4c8718608af939 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9b449d3631b026d1a72b9d5b083bf2cb = $(`<div id="html_9b449d3631b026d1a72b9d5b083bf2cb" style="width: 100.0%; height: 100.0%;">     <b>баня</b><br><br>     <br><br>     <i>8514-16 Rosevelt Ave</i>     </div>`)[0];
+                popup_11ae32e50c7233bdbb4c8718608af939.setContent(html_9b449d3631b026d1a72b9d5b083bf2cb);
+            
+        
+
+        circle_marker_5c9e440cb4824bd87aec143379590691.bindPopup(popup_11ae32e50c7233bdbb4c8718608af939)
+        ;
+
+        
+    
+    
+            var circle_marker_e943953a658195c3b2d08b4a872ac318 = L.circleMarker(
+                [41.8596321, -87.6687398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_58ab7cfa86b5e56f75c82d79f9f38a59 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_265360b3d184441f46cb97793ff677c7 = $(`<div id="html_265360b3d184441f46cb97793ff677c7" style="width: 100.0%; height: 100.0%;">     <b>баня</b><br><br>     <br><br>     <i>1115-17 S Paulina St</i>     </div>`)[0];
+                popup_58ab7cfa86b5e56f75c82d79f9f38a59.setContent(html_265360b3d184441f46cb97793ff677c7);
+            
+        
+
+        circle_marker_e943953a658195c3b2d08b4a872ac318.bindPopup(popup_58ab7cfa86b5e56f75c82d79f9f38a59)
+        ;
+
+        
+    
+    
+            var circle_marker_8a659cb064b3f4582cfe8c73e9d47726 = L.circleMarker(
+                [41.8955337, -87.6816865],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_760ce66407b372797a60649b08333990 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_69945f83a4a1d046e54172b011b54d22 = $(`<div id="html_69945f83a4a1d046e54172b011b54d22" style="width: 100.0%; height: 100.0%;">     <b>погребщик</b><br><br>     <br><br>     <i>2157 W Chicago Ave</i>     </div>`)[0];
+                popup_760ce66407b372797a60649b08333990.setContent(html_69945f83a4a1d046e54172b011b54d22);
+            
+        
+
+        circle_marker_8a659cb064b3f4582cfe8c73e9d47726.bindPopup(popup_760ce66407b372797a60649b08333990)
+        ;
+
+        
+    
+    
+            var circle_marker_7d92f81a6eb9e987311c3fe5f7ec7206 = L.circleMarker(
+                [41.897447, -87.6671162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_faab6e0b334835d942f8ae613e9babd2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d472100da8bc39c2a171c795792ac237 = $(`<div id="html_d472100da8bc39c2a171c795792ac237" style="width: 100.0%; height: 100.0%;">     <b>Русское независимое общество</b><br><br>     <br><br>     <i>845 N Ashland Ave</i>     </div>`)[0];
+                popup_faab6e0b334835d942f8ae613e9babd2.setContent(html_d472100da8bc39c2a171c795792ac237);
+            
+        
+
+        circle_marker_7d92f81a6eb9e987311c3fe5f7ec7206.bindPopup(popup_faab6e0b334835d942f8ae613e9babd2)
+        ;
+
+        
+    
+    
+            var circle_marker_178e7b4c68baf0b9c0b7ce39a6b51b65 = L.circleMarker(
+                [41.8983705, -87.6718783],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_ada2bed702efdf834ed8cbff85ec3386 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_54fb3916a82d5ba6f372d5753a41f59c = $(`<div id="html_54fb3916a82d5ba6f372d5753a41f59c" style="width: 100.0%; height: 100.0%;">     <b>церковь</b><br><br>     <br><br>     <i>917 N Wood St</i>     </div>`)[0];
+                popup_ada2bed702efdf834ed8cbff85ec3386.setContent(html_54fb3916a82d5ba6f372d5753a41f59c);
+            
+        
+
+        circle_marker_178e7b4c68baf0b9c0b7ce39a6b51b65.bindPopup(popup_ada2bed702efdf834ed8cbff85ec3386)
+        ;
+
+        
+    
+    
+            var circle_marker_078d52911c6838db3fff7043c3145f3c = L.circleMarker(
+                [41.8640156, -87.6467167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_3b9a78ba58967088ea59f0731d2df27b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9fa1becd60670d2b6406dd3a9542df9e = $(`<div id="html_9fa1becd60670d2b6406dd3a9542df9e" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>1346 S Halsted St</i>     </div>`)[0];
+                popup_3b9a78ba58967088ea59f0731d2df27b.setContent(html_9fa1becd60670d2b6406dd3a9542df9e);
+            
+        
+
+        circle_marker_078d52911c6838db3fff7043c3145f3c.bindPopup(popup_3b9a78ba58967088ea59f0731d2df27b)
+        ;
+
+        
+    
+    
+            var circle_marker_4c9bbde30244d7af9f9b81e079baaf0d = L.circleMarker(
+                [41.8818386, -87.6257462],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a47653886c70cb40e8f8de626b69b150 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c0dcc455578d0c7cd36d881ddd242a1d = $(`<div id="html_c0dcc455578d0c7cd36d881ddd242a1d" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>5 S Wabash Ave</i>     </div>`)[0];
+                popup_a47653886c70cb40e8f8de626b69b150.setContent(html_c0dcc455578d0c7cd36d881ddd242a1d);
+            
+        
+
+        circle_marker_4c9bbde30244d7af9f9b81e079baaf0d.bindPopup(popup_a47653886c70cb40e8f8de626b69b150)
+        ;
+
+        
+    
+    
+            var circle_marker_344ce668ee109380501a2a7076d4d6d9 = L.circleMarker(
+                [41.8958422, -87.6858167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_92ceadf6c04c237954f3d80d86412623 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_913a1584fe6a3c36d20c8358f798b1ff = $(`<div id="html_913a1584fe6a3c36d20c8358f798b1ff" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     гинеколог/педиатр<br><br>     <i>2358 W Chicago Ave</i>     </div>`)[0];
+                popup_92ceadf6c04c237954f3d80d86412623.setContent(html_913a1584fe6a3c36d20c8358f798b1ff);
+            
+        
+
+        circle_marker_344ce668ee109380501a2a7076d4d6d9.bindPopup(popup_92ceadf6c04c237954f3d80d86412623)
+        ;
+
+        
+    
+    
+            var circle_marker_827ca8361f2cbba7447cae4b08f6dccc = L.circleMarker(
+                [41.844355, -87.7230455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_34bb183e6d4dc29fea37968a78addca1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_83135c313df61c17bfca8bb7f7dc048b = $(`<div id="html_83135c313df61c17bfca8bb7f7dc048b" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     гинеколог/педиатр<br><br>     <i>3924 w 26th st</i>     </div>`)[0];
+                popup_34bb183e6d4dc29fea37968a78addca1.setContent(html_83135c313df61c17bfca8bb7f7dc048b);
+            
+        
+
+        circle_marker_827ca8361f2cbba7447cae4b08f6dccc.bindPopup(popup_34bb183e6d4dc29fea37968a78addca1)
+        ;
+
+        
+    
+    
+            var circle_marker_51e19f08c1ccb2465104cfb3bf456d09 = L.circleMarker(
+                [41.9031728, -87.6672648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_b125b4025b6296ebe6e933bf94fbf279 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_616f71504584947c40992c5f47d0f75a = $(`<div id="html_616f71504584947c40992c5f47d0f75a" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     <br><br>     <i>1555 W Division St</i>     </div>`)[0];
+                popup_b125b4025b6296ebe6e933bf94fbf279.setContent(html_616f71504584947c40992c5f47d0f75a);
+            
+        
+
+        circle_marker_51e19f08c1ccb2465104cfb3bf456d09.bindPopup(popup_b125b4025b6296ebe6e933bf94fbf279)
+        ;
+
+        
+    
+    
+            var circle_marker_47c1783503e01eada632b8824ae83e8d = L.circleMarker(
+                [41.5412317, -87.6353661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_7acdbf94c139893cbcb082ea6c1e49bc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0168ec227812666953d96212a3905375 = $(`<div id="html_0168ec227812666953d96212a3905375" style="width: 100.0%; height: 100.0%;">     <b>косметология</b><br><br>     <br><br>     <i>1339 So Halsted St</i>     </div>`)[0];
+                popup_7acdbf94c139893cbcb082ea6c1e49bc.setContent(html_0168ec227812666953d96212a3905375);
+            
+        
+
+        circle_marker_47c1783503e01eada632b8824ae83e8d.bindPopup(popup_7acdbf94c139893cbcb082ea6c1e49bc)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc3fbc72053025e1b1c2621e06ac097 = L.circleMarker(
+                [41.8579259, -87.6523739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_93745866b29d992ee88889826ddaebbc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3870f8850ce7902e6119c88d9c64e007 = $(`<div id="html_3870f8850ce7902e6119c88d9c64e007" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     хирург и акушер<br><br>     <i>1025 W 18th st</i>     </div>`)[0];
+                popup_93745866b29d992ee88889826ddaebbc.setContent(html_3870f8850ce7902e6119c88d9c64e007);
+            
+        
+
+        circle_marker_5fc3fbc72053025e1b1c2621e06ac097.bindPopup(popup_93745866b29d992ee88889826ddaebbc)
+        ;
+
+        
+    
+    
+            var circle_marker_06c57a708663c3de3cbb878607b2ca59 = L.circleMarker(
+                [41.8169895, -87.6996915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_733219bd01612e45c57cc56778325248 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_45e5b3117c4a53d01e1140eb0b17213d = $(`<div id="html_45e5b3117c4a53d01e1140eb0b17213d" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Зубной<br><br>     <i>4204 Archer Ave</i>     </div>`)[0];
+                popup_733219bd01612e45c57cc56778325248.setContent(html_45e5b3117c4a53d01e1140eb0b17213d);
+            
+        
+
+        circle_marker_06c57a708663c3de3cbb878607b2ca59.bindPopup(popup_733219bd01612e45c57cc56778325248)
+        ;
+
+        
+    
+    
+            var circle_marker_876c33dd3b7e3d298785bb761c3b5d21 = L.circleMarker(
+                [41.9033594, -87.6716882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_55983f158bcc8a2fb3a065ff4cbafcad = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bca2a096d28876c442fb19db9ad3a319 = $(`<div id="html_bca2a096d28876c442fb19db9ad3a319" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Зубной<br><br>     <i>1756 W Division St</i>     </div>`)[0];
+                popup_55983f158bcc8a2fb3a065ff4cbafcad.setContent(html_bca2a096d28876c442fb19db9ad3a319);
+            
+        
+
+        circle_marker_876c33dd3b7e3d298785bb761c3b5d21.bindPopup(popup_55983f158bcc8a2fb3a065ff4cbafcad)
+        ;
+
+        
+    
+    
+            var circle_marker_785e160d427fb079f9e3a5663c86d1f4 = L.circleMarker(
+                [42.0114945, -87.6701554],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_4ea3291c3f8bbc56c21115aa333bef3e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_24f9f437c72511b7a200853cb39c3e82 = $(`<div id="html_24f9f437c72511b7a200853cb39c3e82" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>631 S Ashland Blvd</i>     </div>`)[0];
+                popup_4ea3291c3f8bbc56c21115aa333bef3e.setContent(html_24f9f437c72511b7a200853cb39c3e82);
+            
+        
+
+        circle_marker_785e160d427fb079f9e3a5663c86d1f4.bindPopup(popup_4ea3291c3f8bbc56c21115aa333bef3e)
+        ;
+
+        
+    
+    
+            var circle_marker_9d589ef34a71c4ab2c3904c89ec58a5d = L.circleMarker(
+                [41.8818386, -87.6257462],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_2e7e5ff2cdaf66777e2a5323aa4662a9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_346ba3fae3e0e55a8fe60bf9a42bbff5 = $(`<div id="html_346ba3fae3e0e55a8fe60bf9a42bbff5" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Хирург<br><br>     <i>5 S Wabash Ave</i>     </div>`)[0];
+                popup_2e7e5ff2cdaf66777e2a5323aa4662a9.setContent(html_346ba3fae3e0e55a8fe60bf9a42bbff5);
+            
+        
+
+        circle_marker_9d589ef34a71c4ab2c3904c89ec58a5d.bindPopup(popup_2e7e5ff2cdaf66777e2a5323aa4662a9)
+        ;
+
+        
+    
+    
+            var circle_marker_b6825bbbac9626cf3009a70bef6f6f9b = L.circleMarker(
+                [41.8580812, -87.6605828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_529cc1a2d7cdb50526a0d8653ade6fbb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_796a9da0c529741f2fb107f9524a771b = $(`<div id="html_796a9da0c529741f2fb107f9524a771b" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     -<br><br>     <i>1663 Blue Island Ave</i>     </div>`)[0];
+                popup_529cc1a2d7cdb50526a0d8653ade6fbb.setContent(html_796a9da0c529741f2fb107f9524a771b);
+            
+        
+
+        circle_marker_b6825bbbac9626cf3009a70bef6f6f9b.bindPopup(popup_529cc1a2d7cdb50526a0d8653ade6fbb)
+        ;
+
+        
+    
+    
+            var circle_marker_ace7a1af510bc78bfc62edf9207aa49f = L.circleMarker(
+                [41.8957918, -87.6706139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_9ab8024c92d41c2220cd53c3bf7eaeb6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2bacb74f27b54b0f83357ed699c86c39 = $(`<div id="html_2bacb74f27b54b0f83357ed699c86c39" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     окончивший Иллинойский университет<br><br>     <i>1719 W Chicago Ave</i>     </div>`)[0];
+                popup_9ab8024c92d41c2220cd53c3bf7eaeb6.setContent(html_2bacb74f27b54b0f83357ed699c86c39);
+            
+        
+
+        circle_marker_ace7a1af510bc78bfc62edf9207aa49f.bindPopup(popup_9ab8024c92d41c2220cd53c3bf7eaeb6)
+        ;
+
+        
+    
+    
+            var circle_marker_99863dc3bc0fd9d0d7243b68a3b4fd45 = L.circleMarker(
+                [41.8996872, -87.6831983],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_b07897ecdba33a49880cb29b4f500401 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_faed09452c2229d72d14441a80b9c719 = $(`<div id="html_faed09452c2229d72d14441a80b9c719" style="width: 100.0%; height: 100.0%;">     <b>аренда жилья</b><br><br>     комната в наем<br><br>     <i>2228 W Augusta</i>     </div>`)[0];
+                popup_b07897ecdba33a49880cb29b4f500401.setContent(html_faed09452c2229d72d14441a80b9c719);
+            
+        
+
+        circle_marker_99863dc3bc0fd9d0d7243b68a3b4fd45.bindPopup(popup_b07897ecdba33a49880cb29b4f500401)
+        ;
+
+        
+    
+    
+            var circle_marker_e9f319aa2ca0961bf91a1887496fd528 = L.circleMarker(
+                [41.8634693, -87.6522518],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_08b5cdbcbb2982626a50286908408281 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ec00d50159341e9b5097f1bdf3044b67 = $(`<div id="html_ec00d50159341e9b5097f1bdf3044b67" style="width: 100.0%; height: 100.0%;">     <b>личное</b><br><br>     ищу брата<br><br>     <i>1453 W 14th St</i>     </div>`)[0];
+                popup_08b5cdbcbb2982626a50286908408281.setContent(html_ec00d50159341e9b5097f1bdf3044b67);
+            
+        
+
+        circle_marker_e9f319aa2ca0961bf91a1887496fd528.bindPopup(popup_08b5cdbcbb2982626a50286908408281)
+        ;
+
+        
+    
+    
+            var circle_marker_7d34341858edb303a3ce43df68c6a6b5 = L.circleMarker(
+                [41.8982851, -87.7801219],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a032926cf11c62143f13d961c083b2e4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_559ef1adfb47d4b5f31de279a3eb1479 = $(`<div id="html_559ef1adfb47d4b5f31de279a3eb1479" style="width: 100.0%; height: 100.0%;">     <b>стройка</b><br><br>     Строительная контора<br><br>     <i>2617 Augusta St</i>     </div>`)[0];
+                popup_a032926cf11c62143f13d961c083b2e4.setContent(html_559ef1adfb47d4b5f31de279a3eb1479);
+            
+        
+
+        circle_marker_7d34341858edb303a3ce43df68c6a6b5.bindPopup(popup_a032926cf11c62143f13d961c083b2e4)
+        ;
+
+        
+    
+    
+            var circle_marker_ffb5c258b7575c4e10c1fa858863bef7 = L.circleMarker(
+                [41.8640156, -87.6467167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a4057df6f429c674a5ef81604ec6fbda = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c9d3e2b5d7ac51b5cd2b62c8dba7c8ae = $(`<div id="html_c9d3e2b5d7ac51b5cd2b62c8dba7c8ae" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Зубной<br><br>     <i>1346 S Halsted St</i>     </div>`)[0];
+                popup_a4057df6f429c674a5ef81604ec6fbda.setContent(html_c9d3e2b5d7ac51b5cd2b62c8dba7c8ae);
+            
+        
+
+        circle_marker_ffb5c258b7575c4e10c1fa858863bef7.bindPopup(popup_a4057df6f429c674a5ef81604ec6fbda)
+        ;
+
+        
+    
+    
+            var circle_marker_e9c104f753849ab895bbf60654b0c209 = L.circleMarker(
+                [41.8574854, -87.694647],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_6ca03dd3b83bcd5c7d078799eff623ea = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dadca939947900eb33a92e4a769cf1ce = $(`<div id="html_dadca939947900eb33a92e4a769cf1ce" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     <br><br>     <i>2752 W 18th st</i>     </div>`)[0];
+                popup_6ca03dd3b83bcd5c7d078799eff623ea.setContent(html_dadca939947900eb33a92e4a769cf1ce);
+            
+        
+
+        circle_marker_e9c104f753849ab895bbf60654b0c209.bindPopup(popup_6ca03dd3b83bcd5c7d078799eff623ea)
+        ;
+
+        
+    
+    
+            var circle_marker_df1f5323b41575ef2a1d3400717c364d = L.circleMarker(
+                [41.8960862, -87.6713746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_4f53b1f706238df26f4c66cb08d9b9f3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_670b6197ca1d80eb1940243677cfdce9 = $(`<div id="html_670b6197ca1d80eb1940243677cfdce9" style="width: 100.0%; height: 100.0%;">     <b>врач</b><br><br>     Акушерка/массажистка<br><br>     <i>1752 W Chicago Ave</i>     </div>`)[0];
+                popup_4f53b1f706238df26f4c66cb08d9b9f3.setContent(html_670b6197ca1d80eb1940243677cfdce9);
+            
+        
+
+        circle_marker_df1f5323b41575ef2a1d3400717c364d.bindPopup(popup_4f53b1f706238df26f4c66cb08d9b9f3)
+        ;
+
+        
+    
+    
+            var circle_marker_fa5d405eb34eb8e840580c1e2a3aa16c = L.circleMarker(
+                [41.7978374, -87.6296911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_e2d93a1a892fe6e6a26dc333e59b2c23 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b2b9bada02ee08893c1fec0acfe0c541 = $(`<div id="html_b2b9bada02ee08893c1fec0acfe0c541" style="width: 100.0%; height: 100.0%;">     <b>вакансия</b><br><br>     -<br><br>     <i>134 N La Salle St</i>     </div>`)[0];
+                popup_e2d93a1a892fe6e6a26dc333e59b2c23.setContent(html_b2b9bada02ee08893c1fec0acfe0c541);
+            
+        
+
+        circle_marker_fa5d405eb34eb8e840580c1e2a3aa16c.bindPopup(popup_e2d93a1a892fe6e6a26dc333e59b2c23)
+        ;
+
+        
+    
+    
+            var circle_marker_7f2b548297892794e4f15c3627238f3b = L.circleMarker(
+                [41.9048456, -87.677803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_c5c489aaa72315278bf6ac403f5b30e4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5305d13f3e84bad7891027080d9514d6 = $(`<div id="html_5305d13f3e84bad7891027080d9514d6" style="width: 100.0%; height: 100.0%;">     <b>рабочий</b><br><br>     контрактор-пейнтер<br><br>     <i>2011 Potomac Ave</i>     </div>`)[0];
+                popup_c5c489aaa72315278bf6ac403f5b30e4.setContent(html_5305d13f3e84bad7891027080d9514d6);
+            
+        
+
+        circle_marker_7f2b548297892794e4f15c3627238f3b.bindPopup(popup_c5c489aaa72315278bf6ac403f5b30e4)
+        ;
+
+        
+    
+    
+            var circle_marker_953b16bbde4ab2a293908a93735ffdae = L.circleMarker(
+                [41.8527473, -87.699008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_bd16053fa381013905743cbfecbcdb78 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_096bd21008cc30d17243e20b5f9d3ccc = $(`<div id="html_096bd21008cc30d17243e20b5f9d3ccc" style="width: 100.0%; height: 100.0%;">     <b>студия</b><br><br>     оперная артистка/постановка голоса<br><br>     <i>2152 Marshall Blvd</i>     </div>`)[0];
+                popup_bd16053fa381013905743cbfecbcdb78.setContent(html_096bd21008cc30d17243e20b5f9d3ccc);
+            
+        
+
+        circle_marker_953b16bbde4ab2a293908a93735ffdae.bindPopup(popup_bd16053fa381013905743cbfecbcdb78)
+        ;
+
+        
+    
+    
+            var circle_marker_464ee7dba33106b7c7e4f45e5cc052c3 = L.circleMarker(
+                [41.7030776, -87.6046042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_1c39a6cf2b35cb87ec9f3d26777e7272 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a90b05619236f1b1bf2f216fa269da17 = $(`<div id="html_a90b05619236f1b1bf2f216fa269da17" style="width: 100.0%; height: 100.0%;">     <b>стройка</b><br><br>     <br><br>     <i>742 E 105th pl</i>     </div>`)[0];
+                popup_1c39a6cf2b35cb87ec9f3d26777e7272.setContent(html_a90b05619236f1b1bf2f216fa269da17);
+            
+        
+
+        circle_marker_464ee7dba33106b7c7e4f45e5cc052c3.bindPopup(popup_1c39a6cf2b35cb87ec9f3d26777e7272)
+        ;
+
+        
+    
+    
+            var circle_marker_d8fa2307b5c5ba0f6f627eb59d14e9e5 = L.circleMarker(
+                [38.6013743, -90.0734752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2315fa09637134d9c5c2a30a8f627d9f);
+        
+    
+        var popup_a55a01ae698e0b24478157b1094e1dde = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_19ba446823e2c876d440e4db6caba080 = $(`<div id="html_19ba446823e2c876d440e4db6caba080" style="width: 100.0%; height: 100.0%;">     <b>стройка</b><br><br>     <br><br>     <i>2626 N 73rd st</i>     </div>`)[0];
+                popup_a55a01ae698e0b24478157b1094e1dde.setContent(html_19ba446823e2c876d440e4db6caba080);
+            
+        
+
+        circle_marker_d8fa2307b5c5ba0f6f627eb59d14e9e5.bindPopup(popup_a55a01ae698e0b24478157b1094e1dde)
+        ;
+
+        
+    
+    
+            map_2315fa09637134d9c5c2a30a8f627d9f.fitBounds(
+                [[41.8962887, -87.6707648], [41.844355, -87.7230455], [41.5412317, -87.6353661], [41.8516024, -87.7212059], [41.9025185, -87.6656254], [41.5047793, -87.5602377], [41.9196172, -87.7709445], [41.8169895, -87.6996915], [41.9033594, -87.6716882], [42.0114945, -87.6701554], [41.8818386, -87.6257462], [41.8580812, -87.6605828], [41.8957918, -87.6706139], [41.9031728, -87.6672648], [41.8579259, -87.6523739], [41.8960862, -87.6713746], [41.9093918, -87.6969272], [41.9048166, -87.6836809], [41.8817463, -87.6434036], [41.8768962, -87.625798], [41.8336577, -87.6458865], [41.8959371, -87.6845906], [27.721699, -81.5461308], [41.8596321, -87.6687398], [41.8955337, -87.6816865], [41.897447, -87.6671162], [41.8983705, -87.6718783], [41.8982851, -87.7801219], [41.8635388, -87.6526387], [41.8982851, -87.7801219], [41.8817463, -87.6434036], [41.8768962, -87.625798], [41.8336577, -87.6458865], [41.8959371, -87.6845906], [27.721699, -81.5461308], [41.8596321, -87.6687398], [41.8955337, -87.6816865], [41.897447, -87.6671162], [41.8983705, -87.6718783], [41.8640156, -87.6467167], [41.8818386, -87.6257462], [41.8958422, -87.6858167], [41.844355, -87.7230455], [41.9031728, -87.6672648], [41.5412317, -87.6353661], [41.8579259, -87.6523739], [41.8169895, -87.6996915], [41.9033594, -87.6716882], [42.0114945, -87.6701554], [41.8818386, -87.6257462], [41.8580812, -87.6605828], [41.8957918, -87.6706139], [41.8996872, -87.6831983], [41.8634693, -87.6522518], [41.8982851, -87.7801219], [41.8640156, -87.6467167], [41.8574854, -87.694647], [41.8960862, -87.6713746], [41.7978374, -87.6296911], [41.9048456, -87.677803], [41.8527473, -87.699008], [41.7030776, -87.6046042], [38.6013743, -90.0734752]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
