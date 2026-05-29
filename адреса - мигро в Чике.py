@@ -17,6 +17,20 @@ LAT_COLUMN = "Latitude"
 LON_COLUMN = "Longitude"
 
 
+YEAR_COLORS = [
+    "blue",
+    "red",
+    "green",
+    "purple",
+    "orange",
+    "darkred",
+    "cadetblue",
+    "darkgreen",
+    "pink",
+    "black",
+]
+
+
 def is_valid_coord(value):
     try:
         value = float(value)
@@ -31,29 +45,31 @@ def clean_value(value):
     return str(value).strip()
 
 
-df = pd.read_excel(EXCEL_FILE)
+def geocode_address(address, geocode):
+    search_queries = [
+        f"{address}, Chicago, IL, USA",
+        f"{address}, Cook County, IL, USA",
+        f"{address}, DuPage County, IL, USA",
+        f"{address}, Lake County, IL, USA",
+        f"{address}, Will County, IL, USA",
+        f"{address}, Kane County, IL, USA",
+        f"{address}, McHenry County, IL, USA",
+        f"{address}, Illinois, USA",
+        f"{address}, USA",
+    ]
 
-# Убираем лишние пробелы в названиях колонок
-df.columns = df.columns.str.strip()
+    for query in search_queries:
+        print(f"Пробую: {query}")
+        location = geocode(query)
 
-if ADDRESS_COLUMN not in df.columns:
-    raise ValueError(f"Нет столбца '{ADDRESS_COLUMN}'. Есть только: {list(df.columns)}")
+        if location:
+            return location.latitude, location.longitude, query
 
-if TOPIC_COLUMN not in df.columns:
-    df[TOPIC_COLUMN] = ""
-
-if DESCRIPTION_COLUMN not in df.columns:
-    df[DESCRIPTION_COLUMN] = ""
-
-if LAT_COLUMN not in df.columns:
-    df[LAT_COLUMN] = None
-
-if LON_COLUMN not in df.columns:
-    df[LON_COLUMN] = None
+    return None, None, None
 
 
 geolocator = Nominatim(
-    user_agent="chicago_address_map",
+    user_agent="chicago_year_layers_map",
     timeout=10
 )
 
@@ -65,73 +81,88 @@ geocode = RateLimiter(
 )
 
 
-coords = []
+sheets = pd.read_excel(EXCEL_FILE, sheet_name=None)
 
-for idx, row in df.iterrows():
-    address = clean_value(row[ADDRESS_COLUMN])
+all_points = []
+updated_sheets = {}
 
-    if not address:
-        print(f"Пропуск строки {idx + 2}: пустой адрес")
+for sheet_name, df in sheets.items():
+    year = str(sheet_name).strip()
+
+    print(f"\n=== Год / лист: {year} ===")
+
+    df.columns = df.columns.str.strip()
+
+    if ADDRESS_COLUMN not in df.columns:
+        print(f"Пропускаю лист '{year}': нет столбца '{ADDRESS_COLUMN}'")
+        updated_sheets[sheet_name] = df
         continue
 
-    lat = row[LAT_COLUMN]
-    lon = row[LON_COLUMN]
+    if TOPIC_COLUMN not in df.columns:
+        df[TOPIC_COLUMN] = ""
 
-    if is_valid_coord(lat) and is_valid_coord(lon):
-        lat = float(lat)
-        lon = float(lon)
-        print(f"CACHED: {address} -> {lat}, {lon}")
+    if DESCRIPTION_COLUMN not in df.columns:
+        df[DESCRIPTION_COLUMN] = ""
 
-    else:
-        location = None
-        used_query = None
+    if LAT_COLUMN not in df.columns:
+        df[LAT_COLUMN] = None
 
-        search_queries = [
-            f"{address}, Chicago, IL, USA",
-            f"{address}, Cook County, IL, USA",
-            f"{address}, DuPage County, IL, USA",
-            f"{address}, Lake County, IL, USA",
-            f"{address}, Will County, IL, USA",
-            f"{address}, Kane County, IL, USA",
-            f"{address}, McHenry County, IL, USA",
-            f"{address}, Illinois, USA",
-            f"{address}, USA",
-        ]
+    if LON_COLUMN not in df.columns:
+        df[LON_COLUMN] = None
 
-        for query in search_queries:
-            print(f"Пробую: {query}")
-            location = geocode(query)
+    for idx, row in df.iterrows():
+        address = clean_value(row[ADDRESS_COLUMN])
 
-            if location:
-                used_query = query
-                break
-
-        if not location:
-            print(f"FAILED: {address}")
+        if not address:
+            print(f"Пропуск строки {idx + 2}: пустой адрес")
             continue
 
-        lat = location.latitude
-        lon = location.longitude
+        lat = row[LAT_COLUMN]
+        lon = row[LON_COLUMN]
 
-        df.at[idx, LAT_COLUMN] = lat
-        df.at[idx, LON_COLUMN] = lon
+        if is_valid_coord(lat) and is_valid_coord(lon):
+            lat = float(lat)
+            lon = float(lon)
+            print(f"CACHED: {address} -> {lat}, {lon}")
 
-        print(f"OK: {address} -> {lat}, {lon} | query: {used_query}")
+        else:
+            lat, lon, used_query = geocode_address(address, geocode)
 
-    coords.append((idx, address, lat, lon))
+            if lat is None or lon is None:
+                print(f"FAILED: {address}")
+                continue
+
+            df.at[idx, LAT_COLUMN] = lat
+            df.at[idx, LON_COLUMN] = lon
+
+            print(f"OK: {address} -> {lat}, {lon} | query: {used_query}")
+
+        all_points.append({
+            "year": year,
+            "sheet_name": sheet_name,
+            "idx": idx,
+            "address": address,
+            "lat": lat,
+            "lon": lon,
+        })
+
+    updated_sheets[sheet_name] = df
 
 
-df.to_excel(EXCEL_FILE, index=False)
-print(f"Координаты сохранены в {EXCEL_FILE}")
+with pd.ExcelWriter(EXCEL_FILE, engine="openpyxl") as writer:
+    for sheet_name, df in updated_sheets.items():
+        df.to_excel(writer, sheet_name=sheet_name, index=False)
+
+print(f"\nКоординаты сохранены в {EXCEL_FILE}")
 
 
-if not coords:
+if not all_points:
     print("Нет найденных координат")
     exit()
 
 
-avg_lat = sum(lat for _, _, lat, _ in coords) / len(coords)
-avg_lon = sum(lon for _, _, _, lon in coords) / len(coords)
+avg_lat = sum(p["lat"] for p in all_points) / len(all_points)
+avg_lon = sum(p["lon"] for p in all_points) / len(all_points)
 
 m = folium.Map(
     location=[avg_lat, avg_lon],
@@ -141,36 +172,54 @@ m = folium.Map(
 )
 
 
-for idx, address, lat, lon in coords:
-    row = df.loc[idx]
+for layer_index, (sheet_name, df) in enumerate(updated_sheets.items()):
+    year = str(sheet_name).strip()
+    color = YEAR_COLORS[layer_index % len(YEAR_COLORS)]
 
-    topic = clean_value(row[TOPIC_COLUMN])
-    description = clean_value(row[DESCRIPTION_COLUMN])
+    layer = folium.FeatureGroup(
+        name=f"{year}",
+        show=True
+    )
 
-    if not topic:
-        topic = "Без темы"
+    year_points = [
+        p for p in all_points
+        if p["sheet_name"] == sheet_name
+    ]
 
-    popup_html = f"""
-    <b>{topic}</b><br><br>
-    {description}<br><br>
-    <i>{address}</i>
-    """
+    for point in year_points:
+        row = df.loc[point["idx"]]
 
-    folium.CircleMarker(
-        location=[lat, lon],
-        radius=7,
-        popup=folium.Popup(popup_html, max_width=400),
-        color="blue",
-        fill=True,
-        fill_color="blue",
-        fill_opacity=0.9
-    ).add_to(m)
+        topic = clean_value(row[TOPIC_COLUMN]) or "Без темы"
+        description = clean_value(row[DESCRIPTION_COLUMN])
+        address = point["address"]
+
+        popup_html = f"""
+        <b>{topic}</b><br><br>
+        {description}<br><br>
+        <i>{address}</i><br>
+        <small>Год: {year}</small>
+        """
+
+        folium.CircleMarker(
+            location=[point["lat"], point["lon"]],
+            radius=7,
+            popup=folium.Popup(popup_html, max_width=400),
+            color=color,
+            fill=True,
+            fill_color=color,
+            fill_opacity=0.9
+        ).add_to(layer)
+
+    layer.add_to(m)
 
 
-bounds = [[lat, lon] for _, _, lat, lon in coords]
+bounds = [[p["lat"], p["lon"]] for p in all_points]
 m.fit_bounds(bounds, padding=(30, 30))
+
+folium.LayerControl(collapsed=False).add_to(m)
 
 m.save(OUTPUT_FILE)
 
 print(f"Карта сохранена: {OUTPUT_FILE}")
-print(f"Точек на карте: {len(coords)}")
+print(f"Всего точек на карте: {len(all_points)}")
+print(f"Количество слоев / годов: {len(updated_sheets)}")
