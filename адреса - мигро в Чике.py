@@ -11,7 +11,7 @@ from geopy.extra.rate_limiter import RateLimiter
 # =========================================================
 
 EXCEL_FILE = "Database.xlsx"
-OUTPUT_FILE = "map.html"
+OUTPUT_FILE = "index.html"
 
 ADDRESS_COLUMN = "Адрес"
 TOPIC_COLUMN = "Тема"
@@ -519,7 +519,7 @@ title_html = """
         font-size: 20px;
         font-weight: bold;
     ">
-        Mapping Migration: Chicago
+        Empire and Soviet immigrants in Chicago 1918-1938
     </div>
 
     <div style="
@@ -527,7 +527,7 @@ title_html = """
         color: #666;
         margin-top: 3px;
     ">
-        Historical Migration Map
+        Historical Migration Map by Georgiy Shabalin
     </div>
 
 </div>
