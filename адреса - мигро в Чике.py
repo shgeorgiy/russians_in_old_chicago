@@ -323,17 +323,12 @@ m = folium.Map(
 # =========================================================
 
 folium.TileLayer(
-    tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-
-    attr="© OpenStreetMap contributors",
-
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    attr="Tiles © Esri",
     name="Map",
-
     overlay=False,
-
     control=False,
-
-    max_zoom=19
+    max_zoom=16
 ).add_to(m)
 
 
